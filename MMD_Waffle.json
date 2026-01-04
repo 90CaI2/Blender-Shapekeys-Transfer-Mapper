@@ -1,0 +1,169 @@
+{
+  "preset_name": "MMD_to_Fac_v2",
+  "direction_default": "SOURCE_TO_TARGET",
+  "rules": [
+    {
+      "source": "あ",
+      "targets": [
+        { "name": "Fac_Mth_AaTalk", "weight": 0.7 },
+        { "name": "Fac_Mth_Aa1", "weight": 0.6 }
+      ]
+    },
+    {
+      "source": "い",
+      "targets": [
+        { "name": "Fac_Mth_Ii", "weight": 1.0 }
+      ]
+    },
+    {
+      "source": "う",
+      "targets": [
+        { "name": "Fac_Mth_Uu", "weight": 0.8 },
+        { "name": "Fac_Mth_UuOo", "weight": 0.35 }
+      ]
+    },
+    {
+      "source": "え",
+      "targets": [
+        { "name": "Fac_Mth_Ee", "weight": 1.0 }
+      ]
+    },
+    {
+      "source": "お",
+      "targets": [
+        { "name": "Fac_Mth_Oo", "weight": 1.0 }
+      ]
+    },
+
+    {
+      "source": "まばたき",
+      "targets": [
+        { "name": "Fac_Eye_Close", "weight": 1.0 }
+      ]
+    },
+    {
+      "source": "ウィンク",
+      "targets": [
+        { "name": "Fac_Eye_L_Wink", "weight": 1.0 }
+      ]
+    },
+    {
+      "source": "ウィンク右",
+      "targets": [
+        { "name": "Fac_Eye_R_Wink", "weight": 1.0 }
+      ]
+    },
+    {
+      "source": "ウィンク2",
+      "targets": [
+        { "name": "Fac_Eye_L_Wink", "weight": 0.9 },
+        { "name": "Fac_Eye_HalfClose", "weight": 0.2 }
+      ]
+    },
+    {
+      "source": "ウィンク2右",
+      "targets": [
+        { "name": "Fac_Eye_R_Wink", "weight": 0.9 },
+        { "name": "Fac_Eye_HalfClose", "weight": 0.2 }
+      ]
+    },
+
+    {
+      "source": "にこり",
+      "targets": [
+        { "name": "Fac_Mth_L_Up", "weight": 0.7 },
+        { "name": "Fac_Mth_R_Up", "weight": 0.7 },
+        { "name": "Fac_Mth_Laugh2", "weight": 0.25 }
+      ]
+    },
+    {
+      "source": "笑い",
+      "targets": [
+        { "name": "Fac_Mth_Laugh2", "weight": 0.9 },
+        { "name": "Fac_Mth_L_Up", "weight": 0.4 },
+        { "name": "Fac_Mth_R_Up", "weight": 0.4 }
+      ]
+    },
+
+    {
+      "source": "怒り",
+      "targets": [
+        { "name": "Fac_Eye_Angry", "weight": 1.0 },
+        { "name": "Fac_Mth_L_Down", "weight": 0.25 },
+        { "name": "Fac_Mth_R_Down", "weight": 0.25 }
+      ]
+    },
+    {
+      "source": "困る",
+      "targets": [
+        { "name": "Fac_Eye_Sad", "weight": 0.9 },
+        { "name": "Fac_Eye_MidDown", "weight": 0.25 },
+        { "name": "Fac_Mth_L_Down", "weight": 0.35 },
+        { "name": "Fac_Mth_R_Down", "weight": 0.35 }
+      ]
+    },
+
+    {
+      "source": "じと目",
+      "targets": [
+        { "name": "Fac_Eye_HalfClose", "weight": 0.8 },
+        { "name": "Fac_Eye_MidDown", "weight": 0.3 }
+      ]
+    },
+    {
+      "source": "びっくり",
+      "targets": [
+        { "name": "Fac_Eye_MidUp", "weight": 0.8 },
+        { "name": "Fac_Eye_R_Open", "weight": 0.35 },
+        { "name": "Fac_Eye_L_Open", "weight": 0.35 }
+      ]
+    },
+
+    {
+      "source": "口角上げ",
+      "targets": [
+        { "name": "Fac_Mth_L_Up", "weight": 1.0 },
+        { "name": "Fac_Mth_R_Up", "weight": 1.0 }
+      ]
+    },
+
+    {
+      "source": "照れ",
+      "targets": [
+        { "name": "Fac_Eye_LowlidUp", "weight": 0.4 },
+        { "name": "Fac_Eye_HalfClose", "weight": 0.25 },
+        { "name": "Fac_Mth_L_Up", "weight": 0.25 },
+        { "name": "Fac_Mth_R_Up", "weight": 0.25 }
+      ]
+    }
+  ],
+  "aliases": {
+    "まばたき": ["blink", "eye_blink", "eye_close", "まばたき"],
+    "ウィンク": ["wink", "wink_l", "ウィンク"],
+    "ウィンク右": ["wink_r", "右ウィンク", "ウィンク右"],
+    "ウィンク2": ["wink2", "ウィンク2"],
+    "ウィンク2右": ["wink2_r", "ウィンク2右"],
+    "にこり": ["smile", "grin", "にこり"],
+    "笑い": ["laugh", "warai", "笑い"],
+    "怒り": ["angry", "anger", "ikari", "怒り"],
+    "困る": ["worried", "trouble", "komaru", "困る"],
+    "じと目": ["half_lid", "jitome", "じと目"],
+    "びっくり": ["surprise", "shock", "bikkuri", "びっくり"],
+    "照れ": ["shy", "tere", "照れ"],
+    "あ": ["a", "aa", "ah", "あ"],
+    "い": ["i", "ii", "ee", "い"],
+    "う": ["u", "uu", "う"],
+    "え": ["e", "eh", "え"],
+    "お": ["o", "oo", "お"],
+    "口角上げ": ["mouth_corner_up", "corner_up", "口角上げ"]
+  },
+  "global_settings": {
+    "clamp_min": 0.0,
+    "clamp_max": 1.0,
+    "scale": 1.0
+  },
+  "unmapped_source_policy": {
+    "report_only": true,
+    "suggest_using_keywords": true
+  }
+}
